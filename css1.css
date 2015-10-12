@@ -1,3 +1,37 @@
+@font-face{
+	font-family:'bebasneue';
+	src:url(./fonts/bebasneue-webfont.eot)
+	,url(./fonts/bebasneue-webfont.svg)
+	,url(./fonts/bebasneue-webfont.ttf)
+	,url(./fonts/bebasneue-webfont.woff)
+	,url(./fonts/bebasneue-webfont.woff2)
+	,url(./fonts/BebasNeue.otf);
+}
+@font-face{
+	font-family:'ubuntu';
+	src:url(./fonts/ubuntu-r-webfont.eot)
+	,url(./fonts/ubuntu-r-webfont.svg)
+	,url(./fonts/ubuntu-r-webfont.ttf)
+	,url(./fonts/ubuntu-r-webfont.woff)
+	,url(./fonts/ubuntu-r-webfont.woff2);
+}
+@font-face{
+	font-family:'breeserif';
+	src:url(./fonts/breeserif-regular-webfont.eot)
+	,url(./fonts/breeserif-regular-webfont.otf)
+	,url(./fonts/breeserif-regular-webfont.svg)
+	,url(./fonts/breeserif-regular-webfont.ttf)
+	,url(./fonts/breeserif-regular-webfont.woff)
+	,url(./fonts/breeserif-regular-webfont.woff2);
+}
+@font-face{
+	font-family:'bebas';
+	src:url(./fonts/bebas-webfont.eot)
+	,url(./fonts/bebas-webfont.svg)
+	,url(./fonts/bebas-webfont.ttf)
+	,url(./fonts/bebas-webfont.woff)
+	,url(./fonts/bebas-webfont.woff2);
+}
 *{
 	margin:0;
 	padding:0;
@@ -26,10 +60,11 @@ body{
 .top .logo{
 	float:left;
 	font-size:20px;
-	font-family:"微软雅黑",Arial;
+	font-family:'breeserif',"微软雅黑",Arial;
 	color:rgb(96,96,96);
 	padding-left:186px;
 	padding-top:32px;
+	font-weight:lighter;
 }
 .top .logo img{
 	margin-right:4px;
@@ -46,7 +81,7 @@ body{
 .top li a{
 	color:rgb(81,88,98);
 	font-size:14px;
-	font-family:"微软雅黑",Arial;
+	font-family:'ubuntu',"微软雅黑",Arial;
 	display:block;
 	padding:0 25px;
 	height:100%;
@@ -74,11 +109,12 @@ body{
 	line-height:25px;
 	display:block;
 	float:left;
+	text-indent:-1000em;
 }
 .top .search{
 	float:left;
 	font-size:12px;
-	font-family:"微软雅黑",Arial;
+	font-family:'ubuntu',"微软雅黑",Arial;
 	color:rgb(81,88,98);
 	margin-left:90px;
 	margin-top:20px;
@@ -103,26 +139,27 @@ body{
 	text-align:center;
 }
 .slider .center .learnmore{
-	margin-top:24px;
 	background:url(./images/learnmore.png) center no-repeat;
 	height:51px;
 	width:243px;
 	line-height:51px;
 	display:block;
 	text-align: center;
-	margin:24px auto 0;
+	margin:44px auto 0;
+	text-indent:-1000em;
 }
 .slider h1{
 	font-size:60px;
-	padding-top:90px;
+	padding-top:100px;
 	width:100%;
-	font-family:"微软雅黑","黑体",Arial;
+	font-family:'bebasneue',"黑体",Arial;
+	font-weight:lighter;
 }
 .slider p{
 	font-size:14px;
 	margin-top:10px;
 	width:100%;
-	font-family:"微软雅黑",Arial;
+	font-family:'ubuntu',"微软雅黑",Arial;
 }
 .slider .center{
 	position:relative;
@@ -154,19 +191,20 @@ body{
 }
 .service .center{
 	position:relative;
+	width:920px;
 }
 #ourservices{
 	position:absolute;
 	top:-17px;
-	left:567px;
+	left:387px;
 	width:146px;
 	height:35px;
 	background:url(./images/ourservices.png) center no-repeat;
+	text-indent:-1000em;
 }
 .service1{
 	background:url(./images/service1.png) top no-repeat;
 	padding-top:118px;
-	margin-left:159px;
 	float:left;
 	margin-top:50px;
 	width:175px;
@@ -175,7 +213,7 @@ body{
 .service2{
 	background:url(./images/service2.png) top no-repeat;
 	padding-top:118px;
-	margin-left:93px;
+	margin-left:74px;
 	float:left;
 	margin-top:50px;
 	width:175px;
@@ -184,7 +222,7 @@ body{
 .service3{
 	background:url(./images/service3.png) top no-repeat;
 	padding-top:118px;
-	margin-right:93px;
+	margin-right:74px;
 	float:right;
 	margin-top:50px;
 	width:175px;
@@ -193,7 +231,6 @@ body{
 .service4{
 	background:url(./images/service4.png) top no-repeat;
 	padding-top:118px;
-	margin-right:164px;
 	float:right;
 	margin-top:50px;
 	width:175px;
@@ -201,15 +238,16 @@ body{
 }
 .service h2{
 	font-size:17px;
-	font-family:"微软雅黑",Arial;
+	font-family:'breeserif',"微软雅黑",Arial;
 	margin-top:20px;
 	margin-bottom:7px;
 	color:rgb(81,88,98);
+	font-weight:lighter;
 }
 .service p{
 	font-size:12px;
 	color:rgb(81,88,98);
-	font-family:"微软雅黑",Arial;
+	font-family:'ubuntu',"微软雅黑",Arial;
 }
 .service p a{
 	color:rgb(62,157,209);
@@ -222,17 +260,21 @@ body{
 	clear:both;
 }
 .portfolio .OPA{
-	width:918px;
+	width:920px;
 	height:100%;
 	margin:0 auto;
 }
+.portfolio .OPA .firstContent{
+	padding-top:55px;
+}
 .portfolio .OPA h1{
 	font-size:30px;
+	line-height:30px;
 	color:rgb(249,133,97);
 	text-align:left;
-	font-family:"微软雅黑",Arial;
+	font-family:'breeserif',"微软雅黑",Arial;
+	font-weight:lighter;
 	float:left;
-	margin-top:55px;
 }
 .portfolio .OPA a{
 	background:url(./images/moreworks.png) center no-repeat;
@@ -241,10 +283,10 @@ body{
 	display:block;
 	float:right;
 	margin-right:4px;
-	margin-top:55px;
 	line-height:32px;
 	display:block;
 	text-align: center;
+	text-indent:-1000em;
 }
 .portfolio .port1{
 	width:284px;
@@ -266,13 +308,14 @@ body{
 .portfolio h2{
 	font-size:17px;
 	color:rgb(249,133,97);
-	font-family:"微软雅黑",Arial;
+	font-family:'breeserif',"微软雅黑",Arial;
+	font-weight:lighter;
 	margin-top:14px;
 }
 .portfolio p{
 	font-size:12px;
 	color:rgb(188,188,188);
-	font-family:"微软雅黑",Arial;
+	font-family:'ubuntu',"微软雅黑",Arial;
 	margin-top:4px;
 }
 .offer{
@@ -283,7 +326,7 @@ body{
 	clear:both;
 }
 .offer .center{
-	width:1024px;
+	width:920px;
 	height:100%;
 	margin:0 auto;
 	text-align:center;
@@ -291,18 +334,25 @@ body{
 	clear:both;
 }
 .offer .center div{
-	width:255px;
+	width:206px;
 	float:left;
-	margin:0 auto;
+	margin-right:32px;
+}
+.offer .center .offer4{
+	float:right;
+	margin:0;
+}
+.offer .center .offer4 p{
+	padding:4px 0 12px 0;
 }
 .offer .center .detail1,
 .offer .center .detail2{
 	display:block;
 	float:right;
-	margin-right:28px;
 	line-height:24px;
 	display:block;
 	text-align: center;
+	text-indent:-1000em;
 }
 .offer .center .detail1{
 	background:url(./images/details1.png) center no-repeat;
@@ -318,7 +368,8 @@ body{
 	font-size:40px;
 	color:rgb(33,144,193);
 	padding-top:30px;
-	font-family:"微软雅黑",Arial;
+	font-family:'bebasneue',Arial;
+	font-weight:lighter;
 }
 .offer .firstP{
 	font-size:12px;
@@ -327,27 +378,28 @@ body{
 	width:730px;
 	margin:13px auto 0;
 	padding:0;
-	font-family:"微软雅黑",Arial;
+	font-family:'ubuntu',"微软雅黑",Arial;
 	text-align:center;
 }
 .offer h2{
 	font-size:17px;
 	color:rgb(43,153,204);
-	margin-top:24px;
+	margin-top:34px;
 	text-align:left;
-	padding-left:18px;
-	font-family:"微软雅黑",Arial;
+	font-family:'breeserif',"微软雅黑",Arial;
+	font-weight:lighter;
 }
 .offer p{
 	font-size:12px;
-	padding:4px 18px 12px 18px;
+	padding:4px 0 12px 0;
 	color:rgb(81,88,98);
-	font-family:"微软雅黑",Arial;
+	font-family:'ubuntu',"微软雅黑",Arial;
 	text-align:left;
 }
 .offer .center div span a{
 	color:rgb(43,153,204);
 	font-size:14px;
+	font-family:'breeserif';
 }
 .testimonials{
 	width:100%;
@@ -359,6 +411,9 @@ body{
 .testimonials .center{
 	border-top:1px solid rgb(217,217,217);
 	height:100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 	width:1024px;
 	text-align:center;
 	position:relative;
@@ -366,30 +421,29 @@ body{
 .testimonials h1{
 	font-size:27px;
 	color:rgb(33,144,193);
-	padding-top:24px;
-	font-family:"微软雅黑",Arial;
+	padding-top:34px;
+	font-family:'bebas',"微软雅黑",Arial;
+	font-weight:lighter;
 }
 .testimonials p{
 	font-size:25px;
 	color:rgb(81,88,98);
 	margin-top:24px;
-	font-family:"微软雅黑",Arial;
+	font-family:'breeserif',"微软雅黑",Arial;
+	font-weight:lighter;
 }
 .testimonials h4{
 	font-size:14px;
 	color:rgb(249,133,97);
-	font-family:"微软雅黑",Arial;
-	margin-top:50px;
+	font-family:'ubuntu',"微软雅黑",Arial;
+	margin-top:46px;
+	font-weight:lighter;
 }
 .testimonials .threeIMG{
-	width:220px;
 	height:89px;
 	position:absolute;
 	bottom:0;
-	left:402px;
-	margin:0 auto;
-}
-.testimonials .threeIMG img{
+	left:405px;
 }
 .footer{
 	min-height:337px;
@@ -400,38 +454,38 @@ body{
 	overflow:hidden;
 }
 .footer .content{
-	width:970px;
+	width:920px;
 	height:100%;
 	margin:0 auto;
 	padding:0;
 }
 .footer .content .footer1{
 	float:left;
-	width:234px;
+	width:222px;
 	padding:0;
 	margin-top:38px;
-	margin-right:29px;
+	margin-right:19px;
 }
 .footer .content .footer2{
 	float:left;
-	width:264px;
+	width:254px;
 	padding:0;
 	margin-top:38px;
-	margin-right:36px;
+	margin-right:22px;
 }
 .footer2 .footer22 img{
 	float:right;
 }
 .footer .content .footer3{
 	float:left;
-	width:226px;
+	width:222px;
 	padding:0;
 	margin-top:38px;
 	margin-right:13px;
 }
 .footer .content .footer4{
-	float:left;
-	width:162px;
+	float:right;
+	width:158px;
 	padding:0;
 	margin-top:38px;
 }
@@ -441,15 +495,19 @@ body{
 	margin-right:11px;
 }
 .footer h2{
-	font-size:22px;
+	font-size:30px;
 	color:rgb(249,133,97);
-	font-family:Arial,"Times New Roman",sans-serif;
+	font-family:'bebasneue',"Times New Roman",sans-serif;
+	font-weight:lighter;
 }
 .footer p{
 	font-size:12px;
 	color:rgb(163,175,178);
 	line-height:20px;
-	font-family:"微软雅黑",Arial;
+	font-family:'ubuntu',"微软雅黑",Arial;
+}
+.footer .footer4 p{
+	font-size:13px;
 }
 .footer a{
 	font-size:12px;
@@ -462,6 +520,7 @@ body{
 .footer .footer2 .footer22 label{
 	font-size:13px;
 	color:rgb(34,140,188);
+	font-family:'ubuntu';
 }
 .footer .footer2 .footer22 input{
 	border-radius: 3px;
@@ -469,7 +528,7 @@ body{
     -moz-border-radius:3px;
 	border: 0;
 	outline:0;
-	width:262px;
+	width:100%;
 	height:28px;
 	margin:12px 0;
 }
@@ -504,7 +563,7 @@ body{
 	margin-top:8px;
 }
 .footer .footer4 div{
-	padding-left:46px;
+	padding-left:44px;
 }
 .footer .footer4 .footer41{
 	background:url(./images/tel.png) left no-repeat;
