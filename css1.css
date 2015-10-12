@@ -18,8 +18,6 @@ body{
 	margin:0 auto;
 	height:100%;
 }
-
-/*top部分*/
 .top{
 	background-color:rgb(255,255,255);
 	width:100%;
@@ -43,74 +41,80 @@ body{
 }
 .top ul li{
 	float:left;
-	padding:32px 17px;
-	margin:0 8px;
-	font-size:14px;
-	font-family:"微软雅黑",Arial;
+	height:100%;
 }
 .top li a{
 	color:rgb(81,88,98);
+	font-size:14px;
+	font-family:"微软雅黑",Arial;
+	display:block;
+	padding:0 25px;
+	height:100%;
+	line-height:81px;
 }
-.current{
+.top li a:hover{
+	background-color:rgb(18,163,214);
+	color:rgb(197,244,255);
+}
+.top .current a{
+	padding:0 18px;
 	background-color:rgb(18,163,214);
 	background-image:url(./images/selected.png);
 	background-repeat:no-repeat;
 	background-position:0 52px;
-}
-.top .current a{
 	color:rgb(197,244,255);
 }
-.top ul .blog{
-	margin-top:-4px;
-	padding-left:9px;
+.top .blog{
+	float:left;
+	margin-left:8px;
+	margin-top:28px;
+	background:url(./images/nav-2.png) center no-repeat;
+	height:25px;
+	width:66px;
+	line-height:25px;
+	display:block;
+	float:left;
 }
 .top .search{
 	float:left;
 	font-size:12px;
-	bottom:33px;
 	font-family:"微软雅黑",Arial;
 	color:rgb(81,88,98);
-	margin-left:75px;
-	margin-top:8px;
+	margin-left:90px;
+	margin-top:20px;
+	background:url(./images/nav-3.png) right no-repeat;
+	height:36px;
+	width:80px;
+	line-height:36px;
+	display:block;
+	float:left;
 }
-.top .search img{
-	position:relative;
-	top:10px;
-	margin-left:6px;
-}
-
-/*slider部分*/
 .slider{
 	position:relative;
 	width:100%;
 	height:489px;
 	background:#2e3e4f url(./images/slider.png) center no-repeat;
 	text-align:center;
+	clear:both;
 }
 .slider h1,
 .slider p{
 	color:rgb(204,206,206);
 	text-align:center;
 }
-.slider input{
-	margin-top: 24px;
-	width: 243px;
-    height: 51px;
-    line-height: 51px;
-    background-color: #f98561;
-    color:#ffffff;
-    border: 0;
-    border-radius: 3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    outline: none;
-    cursor: pointer;
+.slider .center .learnmore{
+	margin-top:24px;
+	background:url(./images/learnmore.png) center no-repeat;
+	height:51px;
+	width:243px;
+	line-height:51px;
+	display:block;
 	text-align: center;
-	font-size: 20px;
+	margin:24px auto 0;
 }
 .slider h1{
 	font-size:60px;
-	padding-top:109px;
+	padding-top:90px;
 	width:100%;
 	font-family:"微软雅黑","黑体",Arial;
 }
@@ -120,20 +124,26 @@ body{
 	width:100%;
 	font-family:"微软雅黑",Arial;
 }
+.slider .center{
+	position:relative;
+	text-align:center;
+}
 .dots{
-	margin-top: 140px;
-	margin-left: 1000px;
+	position: absolute;
+	right: 182px;
+	bottom: 29px;
 }
-.dots img{
-	padding:3px;
+.slider .dots a{
+	background:url(./images/dot.png) center no-repeat;
+	height:17px;
+	width:17px;
+	display:block;
+	float:left;
+	margin-right:4px;
 }
-.selecteddot{
-	border:1px solid #adadad;
-	border-radius:100%;
-	-moz-border-radius:100%;
+.slider .dots .selecteddot{
+	background:url(./images/selecteddot.png) center no-repeat;
 }
-
-/*service部分*/
 .service{
 	position:relative;
 	background-size:100%;
@@ -147,11 +157,15 @@ body{
 }
 #ourservices{
 	position:absolute;
-	width:100%;
 	top:-17px;
-	text-align: center;
+	left:567px;
+	width:146px;
+	height:35px;
+	background:url(./images/ourservices.png) center no-repeat;
 }
 .service1{
+	background:url(./images/service1.png) top no-repeat;
+	padding-top:118px;
 	margin-left:159px;
 	float:left;
 	margin-top:50px;
@@ -159,6 +173,8 @@ body{
 	text-align:center;
 }
 .service2{
+	background:url(./images/service2.png) top no-repeat;
+	padding-top:118px;
 	margin-left:93px;
 	float:left;
 	margin-top:50px;
@@ -166,6 +182,8 @@ body{
 	text-align:center;
 }
 .service3{
+	background:url(./images/service3.png) top no-repeat;
+	padding-top:118px;
 	margin-right:93px;
 	float:right;
 	margin-top:50px;
@@ -173,6 +191,8 @@ body{
 	text-align:center;
 }
 .service4{
+	background:url(./images/service4.png) top no-repeat;
+	padding-top:118px;
 	margin-right:164px;
 	float:right;
 	margin-top:50px;
@@ -187,15 +207,13 @@ body{
 	color:rgb(81,88,98);
 }
 .service p{
-	font-size:11px;
+	font-size:12px;
 	color:rgb(81,88,98);
 	font-family:"微软雅黑",Arial;
 }
 .service p a{
 	color:rgb(62,157,209);
 }
-
-/*portfolio部分*/
 .portfolio{
 	width:100%;
 	height:518px;
@@ -207,7 +225,6 @@ body{
 	width:918px;
 	height:100%;
 	margin:0 auto;
-	/*padding-top:55px;*/
 }
 .portfolio .OPA h1{
 	font-size:30px;
@@ -217,22 +234,17 @@ body{
 	float:left;
 	margin-top:55px;
 }
-.portfolio .OPA input{
-	margin-top:55px;
-	width: 90px;
-    height: 32px;
-    line-height: 32px;
-    background-color: #2190c1;
-    color:#ffffff;
-    border: 0;
-    border-radius: 3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    outline: none;
-    cursor: pointer;
-	text-align: center;
-	font-size: 12px;
+.portfolio .OPA a{
+	background:url(./images/moreworks.png) center no-repeat;
+	height:32px;
+	width:90px;
+	display:block;
 	float:right;
+	margin-right:4px;
+	margin-top:55px;
+	line-height:32px;
+	display:block;
+	text-align: center;
 }
 .portfolio .port1{
 	width:284px;
@@ -258,32 +270,49 @@ body{
 	margin-top:14px;
 }
 .portfolio p{
-	font-size:11px;
+	font-size:12px;
 	color:rgb(188,188,188);
 	font-family:"微软雅黑",Arial;
 	margin-top:4px;
 }
-
-/*offer部分*/
 .offer{
 	width:100%;
 	height:320px;
 	background-color:rgb(244,244,244);
 	background-size:100%;
+	clear:both;
 }
 .offer .center{
 	width:1024px;
 	height:100%;
 	margin:0 auto;
-	border-bottom:1px solid rgb(217,217,217);
 	text-align:center;
 	float:none;
+	clear:both;
 }
-.offer div{
+.offer .center div{
 	width:255px;
 	float:left;
 	margin:0 auto;
-	position:relative;
+}
+.offer .center .detail1,
+.offer .center .detail2{
+	display:block;
+	float:right;
+	margin-right:28px;
+	line-height:24px;
+	display:block;
+	text-align: center;
+}
+.offer .center .detail1{
+	background:url(./images/details1.png) center no-repeat;
+	height:24px;
+	width:55px;
+}
+.offer .center .detail2{
+	background:url(./images/details2.png) center no-repeat;
+	height:28px;
+	width:56px;
 }
 .offer h1{
 	font-size:40px;
@@ -304,28 +333,22 @@ body{
 .offer h2{
 	font-size:17px;
 	color:rgb(43,153,204);
-	margin-top:38px;
+	margin-top:24px;
 	text-align:left;
-	padding-left:28px;
+	padding-left:18px;
 	font-family:"微软雅黑",Arial;
 }
 .offer p{
-	font-size:11px;
-	padding:4px 28px 12px 28px;
+	font-size:12px;
+	padding:4px 18px 12px 18px;
 	color:rgb(81,88,98);
 	font-family:"微软雅黑",Arial;
 	text-align:left;
 }
-.offer img{
-	position:absolute;
-	right:28px;
-}
-.offer span a{
+.offer .center div span a{
 	color:rgb(43,153,204);
 	font-size:14px;
 }
-
-/*testimonials部分*/
 .testimonials{
 	width:100%;
 	height:336px;
@@ -334,8 +357,11 @@ body{
 	clear:both;
 }
 .testimonials .center{
+	border-top:1px solid rgb(217,217,217);
 	height:100%;
+	width:1024px;
 	text-align:center;
+	position:relative;
 }
 .testimonials h1{
 	font-size:27px;
@@ -349,26 +375,29 @@ body{
 	margin-top:24px;
 	font-family:"微软雅黑",Arial;
 }
-.testimonials .threeIMG{
-	margin-top:45px;
-	width:100%;
-}
 .testimonials h4{
 	font-size:14px;
 	color:rgb(249,133,97);
 	font-family:"微软雅黑",Arial;
+	margin-top:50px;
 }
-
+.testimonials .threeIMG{
+	width:220px;
+	height:89px;
+	position:absolute;
+	bottom:0;
+	left:402px;
+	margin:0 auto;
+}
 .testimonials .threeIMG img{
-	margin-top:32px;
 }
-
-/*footer部分*/
 .footer{
-	height:337px;
+	min-height:337px;
 	width:100%;
 	background-color:rgb(46,62,79);
 	background-size:100%;
+	clear:both;
+	overflow:hidden;
 }
 .footer .content{
 	width:970px;
@@ -430,9 +459,36 @@ body{
 .footer4 div{
 	clear:both;
 }
-.footer .footer2 label{
+.footer .footer2 .footer22 label{
 	font-size:13px;
 	color:rgb(34,140,188);
+}
+.footer .footer2 .footer22 input{
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+    -moz-border-radius:3px;
+	border: 0;
+	outline:0;
+	width:262px;
+	height:28px;
+	margin:12px 0;
+}
+.footer .footer2 .footer22 input.signup{
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+    -moz-border-radius:3px;
+	border: 0;
+	outline:0;
+	width:77px;
+	height:27px;
+	color:#ffffff;
+	background-color: #2190c1;
+	cursor:pointer;
+	font-size:13px;
+	text-align:center;
+	float:right;
+	display:block;
+	margin:0;
 }
 .footer11,
 .footer12,
@@ -447,7 +503,15 @@ body{
 .footer43 img{
 	margin-top:8px;
 }
-.footer22 input{
-	width:262px;
-	height:28px;
+.footer .footer4 div{
+	padding-left:46px;
+}
+.footer .footer4 .footer41{
+	background:url(./images/tel.png) left no-repeat;
+}
+.footer .footer4 .footer42{
+	background:url(./images/phone.png) left no-repeat;
+}
+.footer .footer4 .footer43{
+	background:url(./images/mail.png) left no-repeat;
 }
