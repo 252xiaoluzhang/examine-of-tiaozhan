@@ -136,7 +136,6 @@ body{
 .slider h1,
 .slider p{
 	color:rgb(204,206,206);
-	text-align:center;
 }
 .slider .center .learnmore{
 	background:url(./images/learnmore.png) center no-repeat;
@@ -163,7 +162,6 @@ body{
 }
 .slider .center{
 	position:relative;
-	text-align:center;
 }
 .dots{
 	position: absolute;
