@@ -62,8 +62,7 @@ body{
 	font-size:20px;
 	font-family:'breeserif',"微软雅黑",Arial;
 	color:rgb(96,96,96);
-	padding-left:186px;
-	padding-top:32px;
+	padding:32px 0 0 186px;
 	font-weight:lighter;
 }
 .top .logo img{
@@ -101,8 +100,7 @@ body{
 }
 .top .blog{
 	float:left;
-	margin-left:8px;
-	margin-top:28px;
+	margin:28px 0 0 8px;
 	background:url(./images/nav-2.png) center no-repeat;
 	height:25px;
 	width:66px;
@@ -131,7 +129,7 @@ body{
 	height:489px;
 	background:#2e3e4f url(./images/slider.png) center no-repeat;
 	text-align:center;
-	clear:both;
+	/*clear:both;*/
 }
 .slider h1,
 .slider p{
@@ -180,12 +178,9 @@ body{
 	background:url(./images/selecteddot.png) center no-repeat;
 }
 .service{
-	/*position:relative;*/
 	background-size:100%;
-	/*width:100%;*/
 	height:308px;
 	background-color:rgb(244,244,244);
-	/*clear:both;*/
 }
 .service .center{
 	position:relative;
@@ -200,39 +195,29 @@ body{
 	background:url(./images/ourservices.png) center no-repeat;
 	text-indent:-1000em;
 }
-.service1{
-	background:url(./images/service1.png) top no-repeat;
+.services{
 	padding-top:118px;
-	float:left;
 	margin-top:50px;
 	width:175px;
 	text-align:center;
+}
+.service1{
+	background:url(./images/service1.png) top no-repeat;
+	float:left;
 }
 .service2{
 	background:url(./images/service2.png) top no-repeat;
-	padding-top:118px;
 	margin-left:74px;
 	float:left;
-	margin-top:50px;
-	width:175px;
-	text-align:center;
 }
 .service3{
 	background:url(./images/service3.png) top no-repeat;
-	padding-top:118px;
 	margin-right:74px;
 	float:right;
-	margin-top:50px;
-	width:175px;
-	text-align:center;
 }
 .service4{
 	background:url(./images/service4.png) top no-repeat;
-	padding-top:118px;
 	float:right;
-	margin-top:50px;
-	width:175px;
-	text-align:center;
 }
 .service h2{
 	font-size:17px;
@@ -251,10 +236,8 @@ body{
 	color:rgb(62,157,209);
 }
 .portfolio{
-	/*width:100%;*/
 	height:518px;
 	background-color:rgb(46,62,79);
-	/*background-size:100%;*/
 	clear:both;
 }
 .portfolio .OPA{
@@ -317,10 +300,8 @@ body{
 	margin-top:4px;
 }
 .offer{
-	/*width:100%;*/
 	height:320px;
 	background-color:rgb(244,244,244);
-	/*background-size:100%;*/
 	clear:both;
 }
 .offer .center{
@@ -400,7 +381,6 @@ body{
 	font-family:'breeserif';
 }
 .testimonials{
-	width:100%;
 	height:336px;
 	background-color:rgb(244,244,244);
 	background-position:100%;
@@ -445,7 +425,6 @@ body{
 }
 .footer{
 	min-height:337px;
-	width:100%;
 	background-color:rgb(46,62,79);
 	background-size:100%;
 	clear:both;
@@ -547,11 +526,7 @@ body{
 	display:block;
 	margin:0;
 }
-.footer11,
-.footer12,
-.footer21,
-.footer31,
-.footer32{
+.footer_border{
 	border-bottom:1px solid rgb(85,95,112);
 }
 .footer div{
