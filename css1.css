@@ -238,7 +238,7 @@ body{
 .portfolio{
 	height:518px;
 	background-color:rgb(46,62,79);
-	clear:both;
+	/*clear:both;*/
 }
 .portfolio .OPA{
 	width:920px;
@@ -302,7 +302,7 @@ body{
 .offer{
 	height:320px;
 	background-color:rgb(244,244,244);
-	clear:both;
+	/*clear:both;*/
 }
 .offer .center{
 	width:920px;
@@ -384,7 +384,7 @@ body{
 	height:336px;
 	background-color:rgb(244,244,244);
 	background-position:100%;
-	clear:both;
+	/*clear:both;*/
 }
 .testimonials .center{
 	border-top:1px solid rgb(217,217,217);
@@ -427,7 +427,7 @@ body{
 	min-height:337px;
 	background-color:rgb(46,62,79);
 	background-size:100%;
-	clear:both;
+	/*clear:both;*/
 	overflow:hidden;
 }
 .footer .content{
