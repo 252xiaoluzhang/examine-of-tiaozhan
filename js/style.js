@@ -24,7 +24,7 @@ window.onload=function(){
 			changeSlider(this.id);
 		}
 		aA[i].onmouseout=function(){
-			timer=setInterval(autoPlay,5000);         //鼠标移开时，重新启动定时器		
+			timer=setInterval(autoPlay,3000);         //鼠标移开时，重新启动定时器		
 			index=this.id;                             //确保鼠标移开时，轮播图在当前图片基础上移动    
 		}
 	}
@@ -36,7 +36,7 @@ window.onload=function(){
 	}
 	
 	//添加定时器，改变当前高亮的索引
-	timer=setInterval(autoPlay,5000);
+	timer=setInterval(autoPlay,3000);
 	
 	//autoPlay函数
 	function autoPlay(){
