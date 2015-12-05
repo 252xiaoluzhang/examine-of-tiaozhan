@@ -9,10 +9,10 @@
 
 
 
-**在线版展示：**[http://202.117.52.128/309/Demo/index.html](http://202.117.52.128/309/Demo/index.html)
+**在线版展示：**[http://252xiaoluzhang.github.io/examine-of-tiaozhan/](http://252xiaoluzhang.github.io/examine-of-tiaozhan/ "http://252xiaoluzhang.github.io/examine-of-tiaozhan/")
 
 ----------
 
-[![考核作业](http://i.imgur.com/2M31SXQ.png)](http://202.117.52.128/309/Demo/index.html)
+[![考核作业](http://i.imgur.com/2M31SXQ.png)](http://252xiaoluzhang.github.io/examine-of-tiaozhan/)
 
 ----------
